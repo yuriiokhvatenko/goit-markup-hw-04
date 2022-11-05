@@ -398,11 +398,20 @@ background-image: url(../images/clock.svg);
 }
 
 /* Footer */
+.footer-blocks {
+  display: flex;
+  align-items: baseline;
+}
+
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--hero-footer-color);
 }
+.footer-nav-block {
+  margin-right: 70px;
+}
+
 .logo-footer {
   display: inline-block;
   margin-bottom: 20px;
@@ -445,6 +454,41 @@ background-image: url(../images/clock.svg);
 .footer-contact {
   color: rgba(255, 255, 255, 0.6);
 }
+.footer-social-text { 
+font-weight: 700;
+font-size: 14px;
+line-height: calc(16 / 14);
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #FFFFFF;
+
+margin-bottom: 20px;
+}
+
+.footer-social-list {
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+  flex-basis: calc((100% - 10px * 3) / 4);
+  gap: 10px;
+}
+.footer-social-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: var(--primary-bcg-color);
+}
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: var(--accent-color);
+}
+
 
 /* Portfolio */
 /* Buttons */
