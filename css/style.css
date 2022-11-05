@@ -219,8 +219,15 @@ ul {
 }
 
 .features-background {
+  width: 270px;
+  height: 120px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   text-align: center;
+  background-color: #F5F5F5;
   margin-bottom: 30px;
+
+  border-radius: 4px;
 }
 /* .features-item::before {
   content: "";
