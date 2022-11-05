@@ -153,7 +153,7 @@ ul {
   display: flex;
   align-items: center;
 }
-.envelope {
+.mailbox {
   width: 16px;
   height: 12px;
   fill: currentColor;
@@ -217,7 +217,12 @@ ul {
 .features-item {
   flex-basis: 270px;
 }
-.features-item::before {
+
+.features-background {
+  text-align: center;
+  margin-bottom: 30px;
+}
+/* .features-item::before {
   content: "";
   display: block;
   width: 270px;
@@ -232,31 +237,31 @@ ul {
   background-position: center;
 
   
-}
-.antenna::before {
-  /* margin-left: auto;
-  margin-right: auto; */
+} */
+/* .antenna:
+  margin-left: auto;
+  margin-right: auto;
   width: 70px;
   background-image: url(../images/antenna.svg);
-}
-.clock::before {
-  /* margin-left: auto;
-  margin-right: auto; */
+} */
+/* .clock::before {
+  margin-left: auto;
+  margin-right: auto;
   width: 70px;
 background-image: url(../images/clock.svg);
-}
-.diagram::before {
-  /* margin-left: auto;
-  margin-right: auto; */
+} */
+/* .diagram::before {
+  margin-left: auto;
+  margin-right: auto;
   width: 70px;
   background-image: url(../images/diagram.svg);
-}
-.astronaut::before {
-  /* margin-left: auto;
-  margin-right: auto; */
+} */
+/* .astronaut::before {
+  margin-left: auto;
+  margin-right: auto;
   width: 70px;
   background-image: url(../images/astronaut.svg);
-}
+} */
 .features-item:not(:last-child) {
   margin-right: 30px;
 }
@@ -535,6 +540,10 @@ margin-bottom: 20px;
   padding: 20px 24px;
 }
 
+.portfolio-ellement:hover {
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+ 
 .portfolio-title {
   margin-bottom: 4px;
   font-weight: 700;

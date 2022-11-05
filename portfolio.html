@@ -30,21 +30,30 @@
             ><span class="logo-last-header">Studio</span></a
           >
           <ul class="nav-list list">
-            <li class="item"><a href="./index.html" class="link">Студія</a></li>
             <li class="item">
-              <a href="./portfolio.html" class="link current">Портфоліо</a>
+              <a href="./index.html" class="link current">Студія</a>
+            </li>
+            <li class="item">
+              <a href="./portfolio.html" class="link">Портфоліо</a>
             </li>
             <li class="item"><a href="" class="link">Контакти</a></li>
           </ul>
 
           <ul class="nav-contact list">
             <li class="item">
-              <a href="mailto:info@devstudio.com" class="link"
-                >info@devstudio.com</a
+              <a href="mailto:info@devstudio.com" class="link contant-link"
+                ><svg class="mailbox" width="16" height="12">
+                  <use href="./images/sprite.svg#mailbox"></use>
+                </svg>
+                info@devstudio.com</a
               >
             </li>
             <li class="item">
-              <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
+              <a href="tel:+380961111111" class="link contant-link">
+                <svg class="mailbox" width="10" height="16">
+                  <use href="./images/sprite.svg#smartphone"></use></svg
+                >+38 096 111 11 11</a
+              >
             </li>
           </ul>
         </nav>
@@ -71,7 +80,7 @@
           </ul>
           <!-- Portfolio list -->
           <ul class="portfolio-list list">
-            <li>
+            <li class="portfolio-ellement">
               <img
                 src="./images/technokryak.jpg"
                 alt="зразок вебсайту технокряк на макбукі"
@@ -83,7 +92,7 @@
                 <p class="portfolio-text">Веб-сайт</p>
               </div>
             </li>
-            <li>
+            <li class="portfolio-ellement">
               <img
                 src="./images/poster_new_orlean_and_golden_star.jpg"
                 alt="постер з баскетболістами нью орлеан та голден стар"
@@ -97,7 +106,7 @@
                 <p class="portfolio-text">Дизайн</p>
               </div>
             </li>
-            <li>
+            <li class="portfolio-ellement">
               <img
                 src="./images/restoraunt_seafood.jpg"
                 alt="риба на логотипі ресторану"
@@ -109,7 +118,7 @@
                 <p class="portfolio-text">Додаток</p>
               </div>
             </li>
-            <li>
+            <li class="portfolio-ellement">
               <img
                 src="./images/project_prime.jpg"
                 alt="зображення навушників"
@@ -121,7 +130,7 @@
                 <p class="portfolio-text">Маркетинг</p>
               </div>
             </li>
-            <li>
+            <li class="portfolio-ellement">
               <img
                 src="./images/project_boxes.jpg"
                 alt="дві коробки"
@@ -133,7 +142,7 @@
                 <p class="portfolio-text">Додаток</p>
               </div>
             </li>
-            <li>
+            <li class="portfolio-ellement">
               <img
                 src="./images/inspiration_has_no_borders.jpg"
                 alt="зразок вебсайту на макі"
@@ -145,7 +154,7 @@
                 <p class="portfolio-text">Веб-сайт</p>
               </div>
             </li>
-            <li>
+            <li class="portfolio-ellement">
               <img
                 src="./images/limited_edition.jpg"
                 alt="відкрита книжка"
@@ -157,7 +166,7 @@
                 <p class="portfolio-text">Дизайн</p>
               </div>
             </li>
-            <li>
+            <li class="portfolio-ellement">
               <img
                 src="./images/project_lab.jpg"
                 alt="макет проекту"
@@ -169,7 +178,7 @@
                 <p class="portfolio-text">Маркетинг</p>
               </div>
             </li>
-            <li>
+            <li class="portfolio-ellement">
               <img
                 src="./images/growing_business.jpg"
                 alt="ноутбук та інструменти"
@@ -187,35 +196,86 @@
       <!-- Footer -->
       <footer class="footer">
         <div class="container">
-          <a href="./index.html" class="logo-footer link"
-            ><span class="logo-first-footer">Web</span
-            ><span class="logo-last-footer">Studio</span></a
-          >
-          <address>
-            <ul class="list">
-              <li class="adress-list">
-                <a
-                  href="https://goo.gl/maps/FTDDmDJ5Seu388fSA"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  class="link adress"
-                  >м. Київ, пр-т Лесі Українки, 26</a
-                >
-              </li>
-              <li class="adress-list">
-                <a
-                  href="mailto:info@devstudio.com"
-                  class="link footer-contact adress"
-                  >info@devstudio.com</a
-                >
-              </li>
-              <li class="adress-list">
-                <a href="tel:+380961111111" class="link footer-contact adress"
-                  >+38 096 111 11 11</a
-                >
-              </li>
-            </ul>
-          </address>
+          <div class="footer-blocks">
+            <div class="footer-nav-block">
+              <a href="./index.html" class="logo-footer link"
+                ><span class="logo-first-footer">Web</span
+                ><span class="logo-last-footer">Studio</span></a
+              >
+              <address>
+                <ul class="list">
+                  <li class="adress-list">
+                    <a
+                      href="https://goo.gl/maps/FTDDmDJ5Seu388fSA"
+                      target="_blank"
+                      rel="noopener noreferrer nofollow"
+                      class="link adress"
+                      >м. Київ, пр-т Лесі Українки, 26</a
+                    >
+                  </li>
+                  <li class="adress-list">
+                    <a
+                      href="mailto:info@devstudio.com"
+                      class="link footer-contact adress"
+                      >info@devstudio.com</a
+                    >
+                  </li>
+                  <li class="adress-list">
+                    <a
+                      href="tel:+380961111111"
+                      class="link footer-contact adress"
+                      >+38 096 111 11 11</a
+                    >
+                  </li>
+                </ul>
+              </address>
+            </div>
+            <div class="footer-social-block">
+              <p class="footer-social-text">приєднуйтесь</p>
+              <ul class="footer-social-list">
+                <li>
+                  <a
+                    href="https://www.instagram.com/"
+                    class="footer-social-link"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    ><svg width="20" height="20">
+                      <use href="./images/sprite.svg#instagram"></use></svg
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://twitter.com/"
+                    class="footer-social-link"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    ><svg width="20" height="20">
+                      <use href="./images/sprite.svg#twitter"></use></svg
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.facebook.com/"
+                    class="footer-social-link"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    ><svg width="20" height="20">
+                      <use href="./images/sprite.svg#facebook"></use></svg
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/"
+                    class="footer-social-link"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    ><svg width="20" height="20">
+                      <use href="./images/sprite.svg#linkedin"></use></svg
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </footer>
     </main>
